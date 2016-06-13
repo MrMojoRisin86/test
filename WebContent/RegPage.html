@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<h1>Registration Page</h1>
+
+<form action="RegPage.jsp" method="get">
+
+Ime: <input type="text" name="firstName" placeholder="Pera" pattern="[A-Za-z]*" required>
+Prezime:  <input type="text" name="lastName" placeholder="Peric" pattern="[A-Za-z]*"required><br>
+<p>
+E-mail:<input type="text" name="email" placeholder="someone@host.domain" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"required>
+<p>
+
+Odaberite drzavu:
+
+<select name="drzava" required>
+  <option value="">-----</option>
+  <option value="Srbija">Srbija</option> 
+  <option value="Hrvatska">Hrvatska</option> 
+  <option value="Bosna i Hercegovina">Bosna i Hercegovina</option> 
+  <option value="Slovenija">Slovenija</option> 
+  <option value="Makedonija">Makedonija</option> 
+</select>
+<br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
