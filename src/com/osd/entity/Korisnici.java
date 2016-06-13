@@ -30,7 +30,7 @@ public class Korisnici implements Serializable {
 	public Korisnici() {
 	}
 
-	public Integer getId() {
+	public Integer getId() {//add comment to test git changes
 		return this.id;
 	}
 
