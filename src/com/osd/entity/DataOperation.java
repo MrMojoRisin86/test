@@ -42,7 +42,6 @@ public class DataOperation {
 	
 	public com.osd.entity.Korisnici getUser (int id){
 		
-		//DatabaseConnection.getEntityManager().getTransaction().begin();
 		
 		com.osd.entity.Korisnici k = DatabaseConnection.getEntityManager().find(com.osd.entity.Korisnici.class, id);
 
@@ -62,8 +61,6 @@ public class DataOperation {
 
 			System.out.println("Ne postoji korisnik sa ovim ID-om.Brisanje nije moguce!");
 		}
-		// entitymanager.close();
-		// emfactory.close();
 
 	}
 
@@ -79,8 +76,6 @@ public class DataOperation {
 
 		// after updateaaa
 		System.out.println(k);
-		// entitymanager.close();
-		// emfactory.close();
 
 	}
 
