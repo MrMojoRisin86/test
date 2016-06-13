@@ -84,7 +84,7 @@ public class DataOperation {
 
 	}
 
-	public static Timestamp vratiTimeStamp() {
+	public static Timestamp vratiTimeStamp() {//vraca Timestamp
 
 		Timestamp t = new Timestamp(new Date().getTime());
 		return t;
