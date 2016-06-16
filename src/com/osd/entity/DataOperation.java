@@ -1,27 +1,14 @@
 package com.osd.entity;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.sql.Timestamp;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.Date;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import java.util.List;
 
 import com.osd.util.DatabaseConnection;
-import com.osd.util.Korisnici;
-
 
 public class DataOperation {
 	
-
 	public void addUser(com.osd.entity.Korisnici k) {
-
 		DatabaseConnection.getEntityManager().getTransaction().begin();
 
 		DatabaseConnection.getEntityManager().persist(k);
